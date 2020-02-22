@@ -1,0 +1,19 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+#dubbo的配置(消费者)
+dubbo:
+  scan:
+    basePackages: com.jt
+  application:
+    name: consumer-user
+  registry:
+    address: zookeeper://192.168.43.4:2181?backup=192.168.43.4:2182,192.168.43.4:2183
