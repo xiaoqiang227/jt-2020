@@ -2,7 +2,9 @@ package com.jt.mapper;
 
 import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Insert;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface MysqlMapper {
 	@Insert("insert into mysqllock(id) values(1)")
 	void insert();
