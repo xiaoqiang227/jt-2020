@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 @EnableAsync
-public class MvcConfigurer implements WebMvcConfigurer{
+public class MvcConfigurer implements WebMvcConfigurer {
 
     //开启匹配后缀型配置
     @Override

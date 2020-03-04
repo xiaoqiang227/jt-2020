@@ -14,6 +14,7 @@ import redis.clients.jedis.JedisCluster;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
 //拦截器
 @Component //将对象交给Spring容器管理
 public class UserInterceptor implements HandlerInterceptor {
@@ -77,11 +78,11 @@ public class UserInterceptor implements HandlerInterceptor {
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
                            ModelAndView modelAndView) throws Exception {
-		
+
 		//System.out.println("方法执行之后:post");
 	}
-	
-	
+
+
 	/**
 	 * 方法完成的最后阶段
 	 */
